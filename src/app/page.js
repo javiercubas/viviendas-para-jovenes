@@ -33,7 +33,7 @@ export default function Home() {
         <div className={styles.description}>
           <div className={styles.left}>
             <h2 className={styles.subtitle}>PROGRAMAS DE AYUDA Y SUBVENCIÓN A JÓVENES</h2>
-            <p className={styles.text}>CONSIGUE TU AYUDA DE HASTA 10800 EUROS POR LA COMPRA DE TU PRIMERA VIVIENDA.<br></br> CONSIGUE EL 95% DE FINANCIACIÓN EN TU HIPOTECA</p>
+            <p className={styles.text}>CONSIGUE TU AYUDA DE HASTA 10800 EUROS POR LA COMPRA DE TU PRIMERA VIVIENDA.<br></br> <br></br> CONSIGUE EL 95% DE FINANCIACIÓN EN TU HIPOTECA</p>
             <form className={styles.form}>
               <input type="email" placeholder="Introduce tu email" />
               <button type="submit">Estoy interesado</button>
