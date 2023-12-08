@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </section>
       <div className={styles.footer}>
-        <Image src="/footer.jpg" width={1920} height={120} />
+        <Image src="/footer.jpg" width={1920} height={140} />
       </div>
     </main >
   )
