@@ -19,7 +19,7 @@ export default function Home() {
           <Image src="/estadio.webp" width={1920} height={750} />
         </div>
         <div className={styles.header}>
-          <a href='/' className={styles.title}><Image src="/matchmaker.png" width={40} height={40} />Viviendas para jóvenes<span>.com</span></a>
+          <a href='/' className={styles.title}><Image src="/matchmaker.png" width={40} height={40} />VIVIENDAS PARA JÓVENES<span>.</span></a>
           {/* <div className={styles.hamburger} onClick={handleMenuClick}>
             <AiOutlineMenu size={32} color="white" />
           </div>
