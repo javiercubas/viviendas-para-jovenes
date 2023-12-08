@@ -15,11 +15,8 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <section className={styles.hero}>
-        <div className={styles.background}>
-          <Image src="/estadio.webp" width={1920} height={750} />
-        </div>
         <div className={styles.header}>
-          <a href='/' className={styles.title}><Image src="/matchmaker.png" width={40} height={40} />VIVIENDAS PARA JÓVENES<span>.</span></a>
+          <a href='/' className={styles.title}>VIVIENDAS PARA JÓVENES</a>
           {/* <div className={styles.hamburger} onClick={handleMenuClick}>
             <AiOutlineMenu size={32} color="white" />
           </div>
