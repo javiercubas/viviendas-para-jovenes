@@ -33,7 +33,7 @@ export default function Home() {
 
             <h2 className={styles.subtitle}>COMPRA</h2>
 
-            <p className={styles.text}>CONSIGUE TU AYUDA DE HASTA 10800 EUROS POR LA COMPRA DE TU PRIMERA VIVIENDA.<br></br> <br></br> CONSIGUE EL 95% DE FINANCIACIÓN EN TU HIPOTECA</p>
+            <p className={styles.text}>CONSIGUE TU AYUDA DE HASTA 10.800 EUROS POR LA COMPRA DE TU PRIMERA VIVIENDA.<br></br> <br></br> CONSIGUE EL 95% DE FINANCIACIÓN EN TU HIPOTECA</p>
 
             <h2 className={styles.subtitle}>ALQUILER</h2>
 
