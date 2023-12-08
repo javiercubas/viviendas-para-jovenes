@@ -37,7 +37,7 @@ export default function Home() {
 
             <h2 className={styles.subtitle}>ALQUILER</h2>
 
-            <p className={styles.text}>CONSIGUE TU AYUDA DE HASTA 10800 EUROS POR LA COMPRA DE TU PRIMERA VIVIENDA.<br></br> <br></br> CONSIGUE EL 95% DE FINANCIACIÓN EN TU HIPOTECA</p>
+            <p className={styles.text}>CONSIGUE TU BONO DE AYUDA DE 6.000 EUROS.<br></br> <br></br> REBAJA HASTA EL 75% LA RENTA</p>
 
             <form className={styles.form}>
               <input type="email" placeholder="Introduce tu email" />
