@@ -17,15 +17,6 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.header}>
           <a href='/' className={styles.title}>VIVIENDAS PARA JÓVENES</a>
-          {/* <div className={styles.hamburger} onClick={handleMenuClick}>
-            <AiOutlineMenu size={32} color="white" />
-          </div>
-          <nav className={styles.nav + (menu ? ' ' + styles.active : '')}>
-            <a href="#">Inicio</a>
-            <a href="#features">Funcionalidades</a>
-            <a href="#">Nuestra historia</a>
-            <a href="#">Contacto</a>
-          </nav> */}
         </div>
         <Image src="/logotipo-mitmo-miviau.svg" width={334} height={74} />
         <Image src="/image2.png" width={1920} height={200} />
