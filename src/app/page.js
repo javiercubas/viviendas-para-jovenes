@@ -27,6 +27,9 @@ export default function Home() {
             <a href="#">Contacto</a>
           </nav> */}
         </div>
+        <Image src="/logotipo-mitmo-miviau.svg" width={334} height={74} />
+        <Image src="/image2.png" width={1920} height={200} />
+        <Image src="/image3.png" width={210} height={240} />
         <div className={styles.description}>
           <div className={styles.left}>
             <h2 className={styles.subtitle}>PROGRAMAS DE AYUDA Y SUBVENCIÓN A JÓVENES</h2>
@@ -35,19 +38,15 @@ export default function Home() {
 
             <p className={styles.text}>CONSIGUE TU AYUDA DE HASTA 10.800 EUROS POR LA COMPRA DE TU PRIMERA VIVIENDA.<br></br> <br></br> CONSIGUE EL 95% DE FINANCIACIÓN EN TU HIPOTECA</p>
 
-            <h2 className={styles.subtitle}>ALQUILER</h2>
-
-            <p className={styles.text}>CONSIGUE TU BONO DE AYUDA DE 6.000 EUROS.<br></br> <br></br> REBAJA HASTA EL 75% LA RENTA</p>
-
             <form className={styles.form}>
               <input type="email" placeholder="Introduce tu email" />
               <button type="submit">Estoy interesado</button>
             </form>
           </div>
           <div className={styles.right}>
-            <Image src="/logotipo-mitmo-miviau.svg" width={260} height={500} />
-            <Image src="/image2.png" width={260} height={500} />
-            <Image src="/image3.png" width={260} height={500} />
+            <h2 className={styles.subtitle}>ALQUILER</h2>
+
+            <p className={styles.text}>CONSIGUE TU BONO DE AYUDA DE 6.000 EUROS.<br></br> <br></br> REBAJA HASTA EL 75% LA RENTA</p>
           </div>
         </div>
       </section>
