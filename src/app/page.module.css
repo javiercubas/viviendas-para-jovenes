@@ -11,6 +11,7 @@
 
 .hero {
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 .background {
@@ -98,16 +99,16 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 90vh;
   justify-content: center;
   align-items: center;
+  margin-top: 4rem;
 }
 
 .left,
 .right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 50%;
 }
@@ -305,11 +306,22 @@
 }
 
 .footer {
-  width: 100%;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer img {
-  width: 100%;
+  width: 80%;
+}
+
+.footer p {
+  text-align: left;
+  color: black;
+  width: 80%;
 }
 
 @media (max-width: 768px) {
@@ -326,19 +338,35 @@
     display: block;
   }
 
-  .description {
+  .description div {
     flex-direction: column;
     justify-content: flex-start;
+    gap: 2rem;
   }
 
-  .left {
+  .left,
+  .right {
     width: 100%;
     height: 100%;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    gap: 20px;
   }
 
-  .right {
-    display: none;
+  .left div {
+    width: 95%;
+    align-items: center;
+  }
+
+  .left div div {
+    width: 100%;
+  }
+
+  .left div div img {
+    width: 100%;
+  }
+
+  .right img {
+    width: 95%;
   }
 
   .subtitle {
@@ -349,7 +377,7 @@
   .text {
     text-align: center;
     margin: 0;
-    text-wrap: stable;
+    width: 95%;
   }
 
   .form {
@@ -385,4 +413,17 @@
     transform: translateX(0);
   }
 
+  .footer {
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .footer img {
+    height: 50px;
+  }
+
+  .footer p {
+    text-align: center;
+    font-size: 0.7rem;
+  }
 }
