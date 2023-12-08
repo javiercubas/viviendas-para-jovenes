@@ -6,12 +6,11 @@
   padding: 0 6rem;
   min-height: 100vh;
   position: relative;
+  background-color: rgb(51, 51, 51);
 }
 
 .hero {
   height: 100vh;
-  width: 100%;
-  background-color: rgb(51, 51, 51);
 }
 
 .background {
