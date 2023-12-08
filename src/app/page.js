@@ -19,7 +19,7 @@ export default function Home() {
           <Image src="/estadio.webp" width={1920} height={750} />
         </div>
         <div className={styles.header}>
-          <a href='/' className={styles.title}><Image src="/matchmaker.png" width={40} height={40} />Matchmaker<span>.</span></a>
+          <a href='/' className={styles.title}><Image src="/matchmaker.png" width={40} height={40} />Viviendas para jóvenes<span>.com</span></a>
           {/* <div className={styles.hamburger} onClick={handleMenuClick}>
             <AiOutlineMenu size={32} color="white" />
           </div>
@@ -33,6 +33,9 @@ export default function Home() {
         <div className={styles.description}>
           <div className={styles.left}>
             <h2 className={styles.subtitle}>PROGRAMAS DE AYUDA Y SUBVENCIÓN A JÓVENES</h2>
+
+            <h2 className={styles.subtitle}>COMPRA</h2>
+
             <p className={styles.text}>CONSIGUE TU AYUDA DE HASTA 10800 EUROS POR LA COMPRA DE TU PRIMERA VIVIENDA.<br></br> <br></br> CONSIGUE EL 95% DE FINANCIACIÓN EN TU HIPOTECA</p>
             <form className={styles.form}>
               <input type="email" placeholder="Introduce tu email" />
