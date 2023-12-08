@@ -40,7 +40,9 @@ export default function Home() {
             </form>
           </div>
           <div className={styles.right}>
-            <Image src="/phone.png" width={260} height={500} />
+            <Image src="/logotipo-mitmo-miviau.svg" width={260} height={500} />
+            <Image src="/image2.png" width={260} height={500} />
+            <Image src="/image3.png" width={260} height={500} />
           </div>
         </div>
       </section>
