@@ -1,19 +1,46 @@
-"use client";
+"use client"
 
 import Image from 'next/image'
-import { AiOutlineMenu } from 'react-icons/ai'
 import styles from './page.module.css'
-import { useState } from 'react'
 
 export default function Home() {
-  const [menu, setMenu] = useState(false)
+  const enviarEmail = async (e) => {
+    e.preventDefault();
 
-  const handleMenuClick = () => {
-    setMenu(!menu)
-  }
+    const formData = new FormData(e.target);
+    const email = formData.get('email');
+    const nombre = formData.get('nombre');
+    const telefono = formData.get('telefono');
+
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, nombre, telefono }),
+      });
+
+      if (response.ok) {
+        console.log('Correo electrónico enviado con éxito');
+        // Borrar los datos del formulario
+        e.target.reset();
+        // Mostrar mensaje de éxito
+        alert('Hemos recibido tu solicitud. En breve nos pondremos en contacto contigo.');
+      } else {
+        console.error('Error al enviar el correo electrónico');
+        // Mostrar mensaje de error
+        alert('Ha ocurrido un error al enviar el correo electrónico. Por favor, inténtelo de nuevo.');
+      }
+    } catch (error) {
+      console.error(error.toString());
+      // Mostrar mensaje de error
+      alert('Ha ocurrido un error al enviar el correo electrónico. Por favor, inténtelo de nuevo.');
+    }
+  };
 
   return (
-    <main className={styles.main}>
+    <main className={styles.main} >
       <section className={styles.hero}>
         <div className={styles.description}>
           <h2 className={styles.subtitle}>PROGRAMAS DE AYUDA Y SUBVENCIÓN A JÓVENES</h2>
@@ -41,10 +68,10 @@ export default function Home() {
               <Image src='/alquiler.jpeg' width={395} height={208} />
             </div>
           </div>
-          <form className={styles.form}>
-            <input type="email" placeholder="Introduce tu email" />
-            <input type="text" placeholder="Introduce tu nombre" />
-            <input type="tel" placeholder="Introduce tu teléfono" />
+          <form className={styles.form} onSubmit={enviarEmail}>
+            <input name="email" type="email" placeholder="Introduce tu email" />
+            <input name="nombre" type="text" placeholder="Introduce tu nombre" />
+            <input name="telefono" type="tel" placeholder="Introduce tu teléfono" />
             <button type="submit">Estoy interesado</button>
           </form>
         </div>
