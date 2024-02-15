@@ -72,7 +72,7 @@ export default function Home() {
             <input name="email" type="email" placeholder="Introduce tu email" />
             <input name="nombre" type="text" placeholder="Introduce tu nombre" />
             <input name="telefono" type="tel" placeholder="Introduce tu teléfono" />
-            <button type="submit">Estoy interesado</button>
+            <button type="submit">Estoy interesad@</button>
           </form>
         </div>
       </section>
