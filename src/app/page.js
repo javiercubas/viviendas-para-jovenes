@@ -50,7 +50,7 @@ export default function Home() {
 
               <h2 className={styles.subtitle}>COMPRA</h2>
 
-              <p className={styles.text}>CONSIGUE TU AYUDA DE HASTA 10.800 EUROS POR LA COMPRA DE TU PRIMERA VIVIENDA.<br></br> <br></br> CONSIGUE EL 95% DE FINANCIACIÓN EN TU HIPOTECA.</p>
+              <p className={styles.text}>CONSIGUE TU AYUDA DE HASTA 10.800 EUROS POR LA COMPRA DE TU PRIMERA VIVIENDA.<br></br> <br></br> CONSIGUE EL 100% DE FINANCIACIÓN EN TU HIPOTECA.</p>
 
               <div style={{ display: 'flex', backgroundColor: 'white', border: '5px solid black', padding: '20px', borderRadius: '10px' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'space-between' }}>
